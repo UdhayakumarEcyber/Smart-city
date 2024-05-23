@@ -168,17 +168,164 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
     fetchData();
   }, [filter]);
 
+  //Old Average Calculation
+  // const transformData = (
+  //   rawData: EnergyConsumptionData,
+  //   filterType: "day" | "week" | "month"
+  // ) => {
+  //   let filteredData: { name: string; powerConsumption: number }[] = [];
+
+  //   const expenditureData:
+  //     | any[]
+  //     | { [key: string]: { [key: string]: number }[] } =
+  //     rawData["Expenditure"] || [];
+
+  //   if (filterType === "day") {
+  //     const daysInWeekFull: string[] = [
+  //       "Sunday",
+  //       "Monday",
+  //       "Tuesday",
+  //       "Wednesday",
+  //       "Thursday",
+  //       "Friday",
+  //       "Saturday",
+  //     ];
+  //     const daysInWeekAbbr: string[] = [
+  //       "Sun",
+  //       "Mon",
+  //       "Tue",
+  //       "Wed",
+  //       "Thu",
+  //       "Fri",
+  //       "Sat",
+  //     ];
+
+  //     filteredData = daysInWeekAbbr.map((abbr, index) => {
+  //       const fullDayName = daysInWeekFull[index];
+
+  //       const currentDate = new Date();
+  //       currentDate.setDate(currentDate.getDate() + index - 1);
+  //       const day = currentDate.getDate();
+  //       const month = currentDate.toLocaleString("default", { month: "short" });
+  //       // const year = currentDate.getFullYear();
+  //       const year = currentDate.toLocaleString("default", { year: "2-digit" });
+  //       const dateString = `${day}/${month}/${year}`;
+
+  //       const powerEntry = (expenditureData as any[]).find(
+  //         (entry: { day: string }) => entry.day === fullDayName
+  //       );
+
+  //       // Calculate the sum
+  //       const val: any = (expenditureData as any[]).reduce(
+  //         (acc, obj) => acc + obj.value,
+  //         0
+  //       );
+
+  //       // Calculate the average
+  //       const averageVal = val / 1000 / (expenditureData as any[]).length;
+
+  //       const fullDateString = currentDate.toLocaleDateString();
+
+  //       return {
+  //         name: abbr,
+  //         fullDate: fullDateString,
+  //         powerConsumption: powerEntry ? powerEntry.value : 0,
+  //         averageValue: averageVal,
+  //       };
+  //     });
+  //   } else if (filterType === "week") {
+  //     const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];
+
+  //     filteredData = WeekNamesFull.map((weekName) => {
+  //       const powerEntry = (expenditureData as any[]).find(
+  //         (entry: { week: string }) => entry.week === weekName
+  //       );
+  //       const powerValue = powerEntry ? powerEntry.value : 0;
+
+  //       // Calculate the sum
+  //       const val: any = (expenditureData as any[]).reduce(
+  //         (acc, obj) => acc + obj.value,
+  //         0
+  //       );
+
+  //       // Calculate the average
+  //       const averageVal = val / 1000 / (expenditureData as any[]).length;
+
+  //       return {
+  //         name: weekName,
+  //         powerConsumption: powerValue,
+  //         averageValue: averageVal,
+  //       };
+  //     });
+  //   } else if (filterType === "month") {
+  //     const startDate = new Date("2024-02-01T00:00:00").toISOString();
+  //     const monthNamesFull: string[] = [
+  //       "February",
+  //       "March",
+  //       "April",
+  //       "May",
+  //       "June",
+  //       "July",
+  //       "August",
+  //       "September",
+  //       "October",
+  //       "November",
+  //       "December",
+  //     ];
+  //     const monthNamesabbr: string[] = [
+  //       "Feb",
+  //       "Mar",
+  //       "Apr",
+  //       "May",
+  //       "Jun",
+  //       "Jul",
+  //       "Aug",
+  //       "Sep",
+  //       "Oct",
+  //       "Nov",
+  //       "Dec",
+  //     ];
+
+  //     filteredData = monthNamesabbr.map((abbr, index) => {
+  //       const fullMonthName = monthNamesFull[index];
+
+  //       const powerEntry = (expenditureData as any[]).find(
+  //         (entry: { month: string }) => entry.month === fullMonthName
+  //       );
+
+  //       const powerValue = powerEntry ? powerEntry.value : 0;
+
+  //       // Calculate the sum
+  //       const val: any = (expenditureData as any[]).reduce(
+  //         (acc, obj) => acc + obj.value,
+  //         0
+  //       );
+
+  //       // Calculate the average
+  //       const averageVal = val / 1000 / (expenditureData as any[]).length;
+
+  //       return {
+  //         name: abbr,
+  //         powerConsumption: powerValue,
+  //         averageValue: averageVal,
+  //       };
+  //     });
+  //   }
+  //   return filteredData;
+  // };
+
+  //Rolling Average Calculation
+
   const transformData = (
     rawData: EnergyConsumptionData,
     filterType: "day" | "week" | "month"
   ) => {
     let filteredData: { name: string; powerConsumption: number }[] = [];
-
     const expenditureData:
       | any[]
       | { [key: string]: { [key: string]: number }[] } =
       rawData["Expenditure"] || [];
-
+  
     if (filterType === "day") {
       const daysInWeekFull: string[] = [
         "Sunday",
@@ -198,66 +345,44 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
         "Fri",
         "Sat",
       ];
-
+  
+      let pastValue = 0; // Initialize past value for rolling average calculation
       filteredData = daysInWeekAbbr.map((abbr, index) => {
         const fullDayName = daysInWeekFull[index];
-
         const currentDate = new Date();
         currentDate.setDate(currentDate.getDate() + index - 1);
-        const day = currentDate.getDate();
-        const month = currentDate.toLocaleString("default", { month: "short" });
-        // const year = currentDate.getFullYear();
-        const year = currentDate.toLocaleString("default", { year: "2-digit" });
-        const dateString = `${day}/${month}/${year}`;
-
         const powerEntry = (expenditureData as any[]).find(
           (entry: { day: string }) => entry.day === fullDayName
         );
-
-        // Calculate the sum
-        const val: any = (expenditureData as any[]).reduce(
-          (acc, obj) => acc + obj.value,
-          0
-        );
-
-        // Calculate the average
-        const averageVal = val / 1000 / (expenditureData as any[]).length;
-
-        const fullDateString = currentDate.toLocaleDateString();
-
+        const currentValue = powerEntry ? powerEntry.value : 0;
+        const rollingAverage = (pastValue + currentValue) / 2;
+        pastValue = currentValue; // Update past value for next iteration
+  
         return {
           name: abbr,
-          fullDate: fullDateString,
-          powerConsumption: powerEntry ? powerEntry.value : 0,
-          averageValue: averageVal,
+          powerConsumption: currentValue,
+          averageValue: rollingAverage/1000,
         };
       });
     } else if (filterType === "week") {
       const WeekNamesFull: string[] = ["Week1", "Week2", "Week3", "Week4"];
-
+      let pastValue = 0; // Initialize past value for rolling average calculation
+  
       filteredData = WeekNamesFull.map((weekName) => {
         const powerEntry = (expenditureData as any[]).find(
           (entry: { week: string }) => entry.week === weekName
         );
-        const powerValue = powerEntry ? powerEntry.value : 0;
-
-        // Calculate the sum
-        const val: any = (expenditureData as any[]).reduce(
-          (acc, obj) => acc + obj.value,
-          0
-        );
-
-        // Calculate the average
-        const averageVal = val / 1000 / (expenditureData as any[]).length;
-
+        const currentValue = powerEntry ? powerEntry.value : 0;
+        const rollingAverage = (pastValue + currentValue) / 2;
+        pastValue = currentValue; // Update past value for next iteration
+  
         return {
           name: weekName,
-          powerConsumption: powerValue,
-          averageValue: averageVal,
+          powerConsumption: currentValue,
+          averageValue: rollingAverage/1000,
         };
       });
     } else if (filterType === "month") {
-      const startDate = new Date("2024-02-01T00:00:00").toISOString();
       const monthNamesFull: string[] = [
         "February",
         "March",
@@ -284,35 +409,26 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
         "Nov",
         "Dec",
       ];
-
+      let pastValue = 0; // Initialize past value for rolling average calculation
+  
       filteredData = monthNamesabbr.map((abbr, index) => {
         const fullMonthName = monthNamesFull[index];
-
         const powerEntry = (expenditureData as any[]).find(
           (entry: { month: string }) => entry.month === fullMonthName
         );
-
-        const powerValue = powerEntry ? powerEntry.value : 0;
-
-        // Calculate the sum
-        const val: any = (expenditureData as any[]).reduce(
-          (acc, obj) => acc + obj.value,
-          0
-        );
-
-        // Calculate the average
-        const averageVal = val / 1000 / (expenditureData as any[]).length;
-
+        const currentValue = powerEntry ? powerEntry.value : 0;
+        const rollingAverage = (pastValue + currentValue) / 2;
+        pastValue = currentValue; // Update past value for next iteration
+  
         return {
           name: abbr,
-          powerConsumption: powerValue,
-          averageValue: averageVal,
+          powerConsumption: currentValue,
+          averageValue: rollingAverage/1000,
         };
       });
     }
     return filteredData;
   };
-
   const transformedData1 = transformData(energyConsumptionData, "month");
   const transformedData2 = transformData(energyConsumptionData, "week");
   const transformedData3 = transformData(energyConsumptionData, "day");
@@ -500,7 +616,7 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
                     ))}
 
                     <Line
-                      name="Average"
+                      name="Rolling Average"
                       type="monotone"
                       dataKey="averageValue"
                       stroke="#62c607"

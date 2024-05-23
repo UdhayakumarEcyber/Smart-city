@@ -518,8 +518,8 @@ registerWidget({
     widget: SgGridDensity,
     configs: {
         layout: {
-            w: 3,
-            h: 8,
+            w: 15,
+            h: 4,
             // minH: 7,
             // minW: 2,
             //  maxH: 7,

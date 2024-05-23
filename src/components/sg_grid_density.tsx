@@ -62,7 +62,7 @@ const SgGridDensity: React.FunctionComponent<IMapChangeMode> = (props) => {
       <TitleBar title="SG Density Controller" />
       <div className="sg_density-widget">
         <div className="timer-slider" style={{flexDirection:"row"}}>
-          <div className="minus"style={{width:"20px", color:"white", fontSize:"13px", fontWeight:"900", position:"absolute",left:"0px", top:"71px"}}>-</div>
+          <div className="minus"style={{width:"20px", color:"white", fontSize:"27px", fontWeight:"900", position:"absolute",left:"0px", top:"63px"}}>-</div>
           <input
             ref={inputRef}
             type="range"
@@ -83,7 +83,7 @@ const SgGridDensity: React.FunctionComponent<IMapChangeMode> = (props) => {
             }}
             // title={`Selected Time: ${changeFormatTime(currentHour)}`}
           />
-          <div className="plus" style={{width:"20px", color:"white", fontSize:"13px", fontWeight:"900",position:"absolute", right:"0px", top:"71px"}}>+</div>
+          <div className="plus" style={{width:"20px", color:"white", fontSize:"27px", fontWeight:"900",position:"absolute", right:"0px", top:"63px"}}>+</div>
           {/* </div> */}
           {/* <datalist id="steplist">
             <option>0</option>
