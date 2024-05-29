@@ -36628,7 +36628,7 @@ const index_1 = __webpack_require__(/*! ../index */ "./src/index.tsx");
 const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components");
 const SgGridDensity = (props) => {
     const [currentHour, setCurrentHour] = (0, react_1.useState)(12); // 12 pm in hours
-    const [value, setValue] = (0, react_1.useState)(50);
+    const [value, setValue] = (0, react_1.useState)(100);
     const { uxpContext } = props;
     const inputRef = (0, react_1.useRef)(null);
     (0, react_1.useEffect)(() => {
@@ -37140,7 +37140,7 @@ const Street_Light__Status_Widget = (props) => {
                                     react_1.default.createElement(recharts_1.Tooltip, { formatter: (value) => `${value}` }),
                                     react_1.default.createElement(recharts_1.Legend, null),
                                     colorArray.map((color, index) => (react_1.default.createElement(recharts_1.Bar, { key: `bar-${index}`, barSize: 20, dataKey: "powerConsumption", name: "Expenditure", fill: `url(#color${index})` }))),
-                                    react_1.default.createElement(recharts_2.Line, { name: "Average", type: "monotone", dataKey: "averageValue", stroke: "#62c607", strokeWidth: 2, strokeDasharray: "3 3" }),
+                                    react_1.default.createElement(recharts_2.Line, { name: "Rolling Average", type: "monotone", dataKey: "averageValue", stroke: "#62c607", strokeWidth: 2, strokeDasharray: "3 3" }),
                                     react_1.default.createElement("defs", null, colorArray.map((color, index) => (react_1.default.createElement("linearGradient", { key: `gradient-${index}`, id: `color${index}`, x1: "0", y1: "0", x2: "0", y2: "1" },
                                         react_1.default.createElement("stop", { offset: "15%", stopColor: "#009b79" }),
                                         react_1.default.createElement("stop", { offset: "85%", stopColor: "#005745", stopOpacity: 0.9 })))))))))),

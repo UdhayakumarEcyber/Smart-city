@@ -9,7 +9,7 @@ interface IMapChangeMode {
 
 const SgGridDensity: React.FunctionComponent<IMapChangeMode> = (props) => {
   const [currentHour, setCurrentHour] = useState(12); // 12 pm in hours
-  const [value, setValue] = useState(50);
+  const [value, setValue] = useState(100);
 
   const { uxpContext } = props;
   const inputRef = useRef<HTMLInputElement>(null);
