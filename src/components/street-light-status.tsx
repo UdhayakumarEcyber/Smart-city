@@ -333,7 +333,7 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
   const colorArray = ["#005745"];
 
   return (
-    <WidgetWrapper className="smart-city_box waste-bin-box">
+    <WidgetWrapper className="smart-city_box waste-bin-box streetlight_status-box">
       <TitleBar
         title="Street Light Alerts"
         icon="https://static.iviva.com/images/Udhayimages/streetlight-alert.png"
@@ -444,8 +444,8 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
         </div>
 
         <div
-          className="smart-city-content"
-          style={{ height: "400px", width: "100%" }}
+          className="smart-city-content smart-city-status-content"
+          style={{ width: "100%" }}
         >
           <WidgetWrapper className="smart-city_box energy_consumption-box  expenditure-box">
             <TitleBar
@@ -456,78 +456,84 @@ const Street_Light__Status_Widget: React.FunctionComponent<IWidgetProps> = (
             </TitleBar>
             <div className="smart-city-content">
               <div className="technician_chart">
-                <div className="chart-top">
-                  <ToggleFilter
-                    options={[
-                      { label: "7D", value: "day" },
-                      { label: "1M", value: "week" },
-                      { label: "1Y", value: "month" },
-                    ]}
-                    value={toggleFilterValue}
-                    onChange={handleFilterChange}
-                  />
+
+              <div style={{display:"inline-flex", width:"100%"}}>
+
+                <div className="chart-top" style={{ width:'40%', marginTop: "0em", display:"inline-block" }}>
+                  <div className="sub_title_bar">SAR &#40; x 1000 &#41;</div>
                 </div>
-
-                <div className="chart-top" style={{ marginTop: "0.5em" }}>
-                  <div className="sub_title_bar">SAR x 1000 &#41;</div>
-                </div>
-
-                <ResponsiveContainer>
-                  <ComposedChart
-                    data={transformedChartData}
-                    margin={{
-                      top: 10,
-                      right: 0,
-                      left: 0,
-                      bottom: 30,
-                    }}
-                  >
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
-
-                    <Tooltip formatter={(value: any) => `${value}`} />
-                    <Legend />
-
-                    {colorArray.map((color, index) => (
-                      <Bar
-                        key={`bar-${index}`}
-                        barSize={20}
-                        dataKey="powerConsumption"
-                        name="Expenditure"
-                        fill={`url(#color${index})`}
-                      />
-                    ))}
-
-                    <Line
-                      name="Average"
-                      type="monotone"
-                      dataKey="averageValue"
-                      stroke="#62c607"
-                      strokeWidth={2}
-                      strokeDasharray="3 3"
+                <div className="chart-top" style={{ width:'60%', marginTop: "0em", display:"inline-block", textAlign:"right"}}>
+                    <ToggleFilter
+                      options={[
+                        { label: "7D", value: "day" },
+                        { label: "1M", value: "week" },
+                        { label: "1Y", value: "month" },
+                      ]}
+                      value={toggleFilterValue}
+                      onChange={handleFilterChange}
                     />
-                    <defs>
-                      {colorArray.map((color, index) => (
-                        <linearGradient
-                          key={`gradient-${index}`}
-                          id={`color${index}`}
-                          x1="0"
-                          y1="0"
-                          x2="0"
-                          y2="1"
+                  </div>  
+                </div>
+
+                 <div className="status-expenditure-chart" style={{width:"100%", height:"150px"}}>
+                      <ResponsiveContainer>
+                        <ComposedChart
+                          data={transformedChartData}
+                          margin={{
+                            top: 10,
+                            right: 0,
+                            left: 0,
+                            bottom: 30,
+                          }}
                         >
-                          <stop offset="15%" stopColor={"#009b79"} />
-                          <stop
-                            offset="85%"
-                            stopColor={"#005745"}
-                            stopOpacity={0.9}
+                          <XAxis dataKey="name" />
+                          <YAxis />
+                          <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
+
+                          <Tooltip formatter={(value: any) => `${value}`} />
+                          <Legend />
+
+                          {colorArray.map((color, index) => (
+                            <Bar
+                              key={`bar-${index}`}
+                              barSize={20}
+                              dataKey="powerConsumption"
+                              name="Expenditure"
+                              fill={`url(#color${index})`}
+                            />
+                          ))}
+
+                          <Line
+                            name="Average"
+                            type="monotone"
+                            dataKey="averageValue"
+                            stroke="#62c607"
+                            strokeWidth={2}
+                            strokeDasharray="3 3"
                           />
-                        </linearGradient>
-                      ))}
-                    </defs>
-                  </ComposedChart>
-                </ResponsiveContainer>
+                          <defs>
+                            {colorArray.map((color, index) => (
+                              <linearGradient
+                                key={`gradient-${index}`}
+                                id={`color${index}`}
+                                x1="0"
+                                y1="0"
+                                x2="0"
+                                y2="1"
+                              >
+                                <stop offset="15%" stopColor={"#009b79"} />
+                                <stop
+                                  offset="85%"
+                                  stopColor={"#005745"}
+                                  stopOpacity={0.9}
+                                />
+                              </linearGradient>
+                            ))}
+                          </defs>
+                        </ComposedChart>
+                      </ResponsiveContainer>
+                   </div>
+
               </div>
             </div>
           </WidgetWrapper>

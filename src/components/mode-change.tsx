@@ -20,7 +20,7 @@ const ModeChangeWidget: React.FunctionComponent<IMapChangeMode> = (props) => {
   return (
     <WidgetWrapper className="smart-city_box mode-change-box">
       <FormField inline className="showcase-input">
-        <Select
+        <Select  className='harapa'  
           selected={selected}
           options={[
             { label: 'Land Bank Management', value: 'Land Bank Management' },

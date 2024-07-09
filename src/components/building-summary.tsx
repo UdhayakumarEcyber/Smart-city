@@ -25,11 +25,11 @@ const BuildingSummary: React.FunctionComponent<IBuildingSummary> = ({ page, sele
 
   const [building_Summary, setBuilding_Summary] = useState(null);
 
-  //  const lat = selectedAsset?.long;
-  //  const long = selectedAsset?.lat;
+   const lat = selectedAsset?.long;
+   const long = selectedAsset?.lat;
 
-  const long = 39.6131591796875;
-  const lat = 24.4643611907959;
+  // const long = 39.6131591796875;
+  // const lat = 24.4643611907959;
 
   console.log('Selected Asset are', selectedAsset);
   console.log('latitude are', lat);

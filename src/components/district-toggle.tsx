@@ -11,9 +11,7 @@ interface IMapChangeMode {
 const DistrictToggle: React.FunctionComponent<IMapChangeMode> = (props) => { 
 
   const { uxpContext } = props;
-  const [isToggled, setToggled] = useState(false);
-
-   
+  const [isToggled, setToggled] = useState(false); 
 
   const handleClick = () => {
     setToggled((prevState) => {

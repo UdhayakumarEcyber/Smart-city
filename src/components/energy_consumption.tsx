@@ -190,6 +190,7 @@ const EnergyConsumption: React.FunctionComponent<IWidgetProps> = (props) => {
     <WidgetWrapper className="smart-city_box energy_consumption-box lft-widget-box">
       <TitleBar icon='https://static.iviva.com/images/Udhayimages/energy.png' title="Streetlight Energy Consumption"> </TitleBar>
       <div className="smart-city-content">
+        
         <div className="technician_chart">
           <div className='chart-top'>
 

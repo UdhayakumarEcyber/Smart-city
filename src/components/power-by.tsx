@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { WidgetWrapper } from 'uxp/components';
-import { IContextProvider } from '../uxp';
-
-
+import { IContextProvider } from '../uxp'; 
 
 interface IMapChangeMode {
   uxpContext: IContextProvider;

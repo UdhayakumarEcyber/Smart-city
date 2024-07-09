@@ -126,23 +126,7 @@ const CountsWidget: React.FunctionComponent<{}> = () => {
               position="left"
               placeholder=""
             />
-
-            {/* <Select
-              selected={selected}
-              options={[
-                { label: "Class A", value: "op-1" },
-                { label: "Class B", value: "op-2" },
-                { label: "Class C", value: "op-3" },
-                { label: "Class D", value: "op-4" },
-                { label: "Class F", value: "op-5" },
-                { label: "Electrical", value: "op-6" },
-              ]}
-              onChange={(value) => {
-                setSelected(value);
-              }}
-              placeholder=" Fire Types"
-            /> */}
-
+ 
             <DatePicker
               title="Date"
               date={date}

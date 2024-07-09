@@ -70,6 +70,9 @@ import Pole_Details from './components/pole_details'
 import Madinah_Facts from './components/madinah_Facts' 
 import Refresh_Btn from './components/refresh'
 import SgGridDensity from './components/sg_grid_density'
+import Poi from './components/poi'
+import SearchRadius from './components/search-list-radius'
+import POI_Description from './components/poi_description'
 
 
 
@@ -100,9 +103,10 @@ export enum EventsEnum {
   Navigation = 'navigation',
   DistrictJump = 'district-jump',
   ChangeAppMode = 'change-app-mode',
-  SummaryGroupFilter = 'summary-group-filter', 
-  UpdateIOTAssetData = 'update-iot-asset-data',  
+  SummaryGroupFilter = 'summary-group-filter',
+  UpdateIOTAssetData = 'update-iot-asset-data', 
   SetSGGridDensity = 'set-sg-grid-density',
+  SetOperationalDataMode = 'set-operational-data-mode',
 
 }
 
@@ -247,8 +251,8 @@ registerWidget({
     widget: EnergyConsumption,
     configs: {
         layout: {
-            w: 10,
-            h: 9,
+             w: 12,
+              h: 9,
             // minH: 13,
             // minW: 14
         }
@@ -273,8 +277,8 @@ registerWidget({
     widget: Street_Light__Status_Widget,
     configs: {
         layout: {
-            w: 10,
-            h: 14,
+              w: 12,
+              h: 14,
             // minH: 13,
             // minW: 14
         }
@@ -286,8 +290,8 @@ registerWidget({
     widget: VehicleSummaryWidget,
     configs: {
         layout: {
-            w: 15,
-            h: 11,
+             w: 12,
+              h: 11,
             // minH: 12,
             // minW: 12
         }
@@ -299,8 +303,8 @@ registerWidget({
     widget: StreetLightWorkOrder,
     configs: {
         layout: {
-            w: 10,
-            h: 14,
+              w: 12,
+              h: 12,
             // minH: 13,
             // minW: 14
         }
@@ -839,6 +843,59 @@ registerWidget({
 });
 
 
+
+
+registerWidget({
+    id: "poi", 
+    widget: Poi,
+    configs: {
+        layout: {
+            w: 12,
+            h: 18,
+
+            // w: 30,
+            // h: 18,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+
+registerWidget({
+    id: "poi_Description", 
+    widget: POI_Description,
+    configs: {
+        layout: {
+            w: 12,
+            h: 18,
+
+            // w: 30,
+            // h: 18,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+registerWidget({
+    id: "searchRadius", 
+    widget: SearchRadius,
+    configs: {
+        layout: {
+            w: 10,
+            h: 5,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
 
 
 // registerWidget({

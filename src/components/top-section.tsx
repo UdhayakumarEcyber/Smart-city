@@ -29,7 +29,7 @@ const TopNavTabs: React.FunctionComponent<INavmode> = (props) => {
   const tabs: Record<string, ITab> = {
     Waste: { label: 'Waste', className: 'waste', id: 'waste' },
     Streetlight: { label: 'Streetlight', className: 'streetlight', id: 'streetlight' },
-    CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' },
+    // CCTV: { label: 'CCTV', className: 'cctv', id: 'cctv' },
     Water: { label: 'Water', className: 'water', id: 'water' },
     Pollution: { label: 'Pollution', className: 'pollution', id: 'pollution' },
     Fire: { label: 'Fire', className: 'fire', id: 'fire' },

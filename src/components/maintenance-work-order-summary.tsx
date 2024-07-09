@@ -205,8 +205,7 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
                               item={item}
                               subTitleField=""
                               className={`data-table-item ${item.status}`}
-                          />
-
+                          /> 
                            
                       }
                   ]}

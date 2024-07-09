@@ -355,7 +355,29 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
-        }       
+        },
+        {
+            "id": "poi",
+            "name": "Poi",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "poi_Description",
+            "name": "POI Description",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "searchRadius",
+            "name": "Search Radius",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        }
+        
 
         
        
