@@ -376,12 +376,23 @@
             "description": "A sample widget",
             "icon": "",
             "tags":[]
+        },
+        {
+            "id": "gear_Widget",
+            "name": "Gear Widget",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
+        },
+        {
+            "id": "json_Uploader",
+            "name": "Json Uploader",
+            "description": "A sample widget",
+            "icon": "",
+            "tags":[]
         }
         
 
-        
-       
-        
         
         
     ],

@@ -428,7 +428,7 @@ const AlertTrends: React.FunctionComponent<{}> = () => {
                   name="Class F"
                   stroke="#00bcd4"
                 />
-                <Line type="monotone" dataKey="Electricity" stroke="#f44336" />
+                <Line type="monotone" dataKey="Electrical Fire" stroke="#f44336" />
               </LineChart>
               {/* </RadialBarChart> */}
             </ResponsiveContainer>

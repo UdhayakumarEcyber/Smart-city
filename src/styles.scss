@@ -423,494 +423,6 @@
       .smart-city-content {
         .status-content {
           display: flex;
-<<<<<<< HEAD
-=======
-          margin-top: 0.85em;
-
-          .chart-issue {
-            display: inline-block;
-            width: 75%;
-            text-align: center;
-          }
-          .chart-pending {
-            display: inline-block;
-            width: 25%;
-            text-align: center;
-          }
-          h3 {
-            font-size: 1.7em;
-            padding: 0;
-            margin: 0;
-            color: #fff;
-          }
-          p {
-            font-size: 0.85em;
-            padding: 0;
-            margin: 0.3em 0 0 0;
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
-
-  &.waste-collection-vehicle {
-    .smart-city-content {
-      margin-top: 0;
-      .status-content {
-        display: flex;
-        width: 100%;
-        padding: 0.5em 2% 3em 2%;
-
-        .status {
-          display: inline-block;
-          width: 33%;
-          text-align: center;
-
-          .vahicle-icon {
-            display: inline-block;
-            width: 52px;
-            height: 52px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 75% auto;
-            margin-bottom: 0.5em;
-            // background-color: #ffffff9c;
-            border-radius: 10px;
-            // filter: drop-shadow(0px 0px 2px #fff);
-            filter: drop-shadow(0px 0px 2px #01291b);
-
-            // &.co2-icon{
-            //     background-image: url(https://static.iviva.com/images/Udhayimages/co2-cloud.png);
-            // }
-            // &.fuel-consumption-icon{
-            //     background-image: url(https://static.iviva.com/images/Udhayimages/petrol-pump.png);
-            // }
-            // &.s-consumption-icon{
-            //     background-image: url(https://static.iviva.com/images/Udhayimages/money.png);
-            // }
-
-            &.co2-icon {
-              background-image: url(https://static.iviva.com/images/Udhayimages/mdaNav/co2-cloud.png);
-            }
-            &.fuel-consumption-icon {
-              background-image: url(https://static.iviva.com/images/Udhayimages/mdaNav/petrol.png);
-            }
-            &.s-consumption-icon {
-              background-image: url(https://static.iviva.com/images/Udhayimages/mdaNav/money-bag.png);
-            }
-          }
-
-          p {
-            font-size: 0.9em;
-            padding: 0em 0 0 0;
-            margin: 0;
-            color: #fff;
-          }
-          h2 {
-            font-size: 1.8em;
-            padding: 0;
-            margin: 0.4em 0 0.2em 0;
-            color: #fff;
-          }
-          span {
-            font-size: 0.75em;
-            color: #fff;
-          }
-        }
-      }
-    }
-  }
-
-  &.segregation_metrics-box {
-    .recharts-legend-wrapper {
-      width: 180px !important;
-      // right: -145px !important;
-      right: -35px !important;
-      top: 20px;
-      left: auto !important;
-
-      ul {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        li {
-          padding: 0.7em 0;
-          list-style: none;
-
-          .data_values {
-            margin-left: 10px;
-          }
-          em {
-            width: 10px;
-            height: 7px;
-            display: inline-block;
-            margin-right: 5px;
-            vertical-align: top;
-            margin-top: 3px;
-          }
-        }
-      }
-    }
-
-    &.waste-segregation_metrics-box {
-      .recharts-legend-wrapper {
-        right: -145px !important;
-      }
-    }
-  }
-
-  &.vehicle_summary-box {
-    .smart-city-content {
-      display: block;
-      margin-top: 0em;
-      flex: 1;
-      width: 100%;
-      height: 100%;
-
-      .technician_chart {
-        text {
-          color: #fff;
-          fill: #fff !important;
-        }
-      }
-    }
-  }
-
-  &.sg_density-box {
-    .smart-city-content {
-      display: block;
-      margin-top: 0em;
-      flex: 1;
-      width: 100%;
-      height: 100%;
-
-      .technician_chart {
-        text {
-          color: #fff;
-          fill: #fff !important;
-        }
-      }
-    }
-    .sg_density-widget {
-      align-items: center;
-      width: 100%;
-      height: 100%;
-      // position: absolute;
-      // display: inline-flex;
-      // right: 35px !important;
-      // top: -2.5em;
-
-      .timer-range {
-        display: inline-block;
-        left:2%;
-        width: 93%;
-        background: linear-gradient(
-          100deg,
-          rgba(0, 0, 0, 0.1) 0%,
-          rgb(255 255 255 / 100%) 35%,
-          rgba(255, 255, 255, 0) 100%
-        );
-        box-shadow: 0px 0px 1px #353535;
-        -webkit-appearance: none;
-        appearance: none;
-        -moz-appearance: none;
-        outline: none;
-        height: 2px;
-        position: absolute;
-        // writing-mode: horizontal-tb;
-
-        // &::before {
-        //     background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
-        //     content: "";
-        //     width: 40px;
-        //     height: 40px;
-        //     display: block;
-        //     background-size: 100% auto;
-        //     position: absolute;
-        //     top: -18px;
-        //     left: -50px;
-        //     background-repeat: no-repeat;
-        //     background-position: center center;
-
-        // }
-        // &::after {
-        //     background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);
-        //     content: "";
-        //     width: 35px;
-        //     height: 35px;
-        //     display: block;
-        //     background-size: 100% auto;
-        //     position: absolute;
-        //     bottom: -20px;
-        //     right: -45px;
-        //     background-repeat: no-repeat;
-        //     background-position: center center;
-        //     transform: rotate(160deg);
-        // }
-
-        &::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          -moz-appearance: none;
-          appearance: none;
-          background: #fefefe;
-          width: 18px;
-          height: 18px;
-          border-radius: 50%;
-          cursor: pointer;
-          box-shadow: 0px 0px 3px #9f9f9f;
-        }
-      }
-
-      .slider-ticks {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        width: 93%;
-        top: 90px; /* Adjust based on your design */
-        left: 2%;
-        font-size: 12px;
-        color: #fff;
-    }
-    
-    .slider-ticks span {
-        display: block;
-        width: 20px; /* Adjust based on your design */
-        text-align: center;
-    }
-
-      // .timer-slider {
-      //     display: none;
-      //   }
-
-      .timer-range ~ .tooltip:hover p {
-        visibility: visible;
-        opacity: 1;
-      } 
-    }
-  }
-
-  &.energy_consumption-box {
-    .smart-city-content {
-      display: block;
-      margin-top: 0em;
-      flex: 1;
-      width: 100%;
-      height: 100%;
-
-      .technician_chart {
-        margin-top: 0em;
-        height: 90%;
-
-        .recharts-responsive-container {
-          height: 90% !important;
-        }
-        .recharts-wrapper {
-          fill: transparent;
-          font-size: 0.88em;
-        }
-        .recharts-layer,
-        .recharts-cartesian-axis-line {
-          text {
-            fill: #fff !important;
-          }
-        }
-        .recharts-cartesian-axis-ticks,
-        .recharts-legend-item-text {
-          fill: #fff !important;
-          color: #fff;
-        }
-
-        .chart-top {
-          margin-top: 0.5em;
-          .sub_title_bar {
-            &.hrs {
-              display: flex;
-              width: auto;
-              margin-right: 2em;
-              justify-content: end;
-            }
-          }
-        }
-      }
-    }
-
-    &.expenditure-box {
-      .uxp-widget-title-bar {
-        width: 98%;
-      }
-    }
-  }
-
-  &.water_summary-box {
-    .smart-city-content {
-      .status-content {
-        display: flex;
-        width: 100%;
-        padding: 0.5em 0% 0em 0%;
-
-        .status {
-          display: inline-block;
-          width: 33%;
-          text-align: center;
-          // background-color: rgba(0, 97, 67, 0.61);
-          background-color: rgba(13, 80, 60, 0.77);
-          border-radius: 10px;
-          margin-right: 3%;
-          padding-bottom: 1em;
-
-          .vehicle-icon {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 75% auto;
-            margin-bottom: 0.5em;
-            margin-top: 0.8em;
-
-            &.co2-icon {
-              background-image: url(https://static.iviva.com/images/Udhayimages/water-consumption.png);
-            }
-            &.fuel-consumption-icon {
-              background-image: url(https://static.iviva.com/images/Udhayimages/water-polution.png);
-            }
-            &.s-consumption-icon {
-              background-image: url(https://static.iviva.com/images/Udhayimages/water-troubles.png);
-            }
-          }
-
-          p {
-            font-size: 0.85em;
-            padding: 0em 0 0 0;
-            margin: 0;
-            color: #fff;
-          }
-          h2 {
-            font-size: 2.2em;
-            padding: 0;
-            margin: 0.4em 0 0.2em 0;
-            color: #fff;
-
-            span {
-              font-size: 0.3em;
-            }
-          }
-          span {
-            font-size: 0.85em;
-            padding-bottom: 1em;
-
-            &.red {
-              color: #ff2147;
-            }
-            &.green {
-              color: #00e51a;
-            }
-          }
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-  }
-
-  &.water_consumption-box {
-    .smart-city-content {
-      display: block;
-      margin-top: 1em;
-      flex: 1;
-      width: 100%;
-      height: 100%;
-
-      .status-content {
-        display: flex;
-        width: 100%;
-        padding: 0.5em 0% 0em 0%;
-        color: #ffffff;
-        height: 90%;
-
-        .recharts-surface {
-          fill: #ffffff;
-          color: #ffffff;
-          .recharts-layer {
-            fill: #ffffff;
-            color: #ffffff;
-          }
-        }
-      }
-
-      .recharts-responsive-container {
-        .recharts-layer {
-          text {
-            color: #fff;
-            fill: #fff;
-          }
-        }
-      }
-    }
-  }
-
-  &.iaq-box {
-    .smart-city-content {
-      .status-content {
-        display: inline-block;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-
-        .status {
-          display: inline-block;
-          width: 30%;
-          text-align: center;
-          border-radius: 2px;
-          padding: 2em;
-          margin: 1em 0em 0em 1em;
-          background-color: rgb(13 80 60 / 77%);
-
-          p {
-            font-size: 1em;
-            // font-size: .8vw;
-            padding: 0em 0 0 0;
-            margin: 0;
-            color: #fff;
-          }
-          h2 {
-            font-size: 2.2em;
-            // font-size: 1.7vw;
-            padding: 0;
-            margin: 0.4em 0 0.2em 0;
-            color: #fff;
-          }
-          span {
-            font-size: 0.85em;
-            // font-size: .7vw;
-            padding-bottom: 1em;
-            color: #fff;
-            font-weight: bold;
-          }
-
-          &.NO2,
-          &.CO {
-            p,
-            h2,
-            span {
-              color: rgb(209, 171, 0);
-            }
-          }
-          &.SO2 {
-            p,
-            h2,
-            span {
-              color: rgb(118, 0, 0);
-            }
-          }
-        }
-
-        .air-quality-status-overall {
-          display: inline-block;
->>>>>>> b063f279ba2af6a275714c5aab11705648573897
           width: 100%;
           // padding: 1em 8% 1.3em 8%;
           padding: 0.5em 0% 1em 0%;
@@ -1160,11 +672,7 @@
       .sg_density-widget {
         align-items: center;
         width: 100%;
-        height: 100%;
-        // position: absolute;
-        // display: inline-flex;
-        // right: 35px !important;
-        // top: -2.5em;
+        height: 100%; 
   
         .timer-range {
           display: inline-block;
@@ -1182,37 +690,7 @@
           -moz-appearance: none;
           outline: none;
           height: 2px;
-          position: absolute;
-          // writing-mode: horizontal-tb;
-  
-          // &::before {
-          //     background-image: url(https://static.iviva.com/images/Udhayimages/sun.png);
-          //     content: "";
-          //     width: 40px;
-          //     height: 40px;
-          //     display: block;
-          //     background-size: 100% auto;
-          //     position: absolute;
-          //     top: -18px;
-          //     left: -50px;
-          //     background-repeat: no-repeat;
-          //     background-position: center center;
-  
-          // }
-          // &::after {
-          //     background-image: url(https://static.iviva.com/images/Udhayimages/moon.png);
-          //     content: "";
-          //     width: 35px;
-          //     height: 35px;
-          //     display: block;
-          //     background-size: 100% auto;
-          //     position: absolute;
-          //     bottom: -20px;
-          //     right: -45px;
-          //     background-repeat: no-repeat;
-          //     background-position: center center;
-          //     transform: rotate(160deg);
-          // }
+          position: absolute; 
   
           &::-webkit-slider-thumb {
             -webkit-appearance: none;
@@ -1231,9 +709,9 @@
           display: flex;
           justify-content: space-between;
           position: absolute;
-          width: 93%;
-          top: 90px; /* Adjust based on your design */
-          left: 2%;
+          width: 90%;
+          top: 60px;
+          left: 3%;
           font-size: 12px;
           color: #fff;
       }
@@ -1242,18 +720,16 @@
           display: block;
           width: 20px; /* Adjust based on your design */
           text-align: center;
+          color: #424242;
       }
-  
-        // .timer-slider {
-        //     display: none;
-        //   }
+   
   
         .timer-range ~ .tooltip:hover p {
           visibility: visible;
           opacity: 1;
         } 
       }
-    }
+    } 
   
     &.energy_consumption-box {
       .smart-city-content {
@@ -1880,6 +1356,7 @@
 
               border-bottom: 1px solid #ffffff;
               border-radius: 0;
+              padding-left: 0;
             }
           }
   
@@ -4496,7 +3973,7 @@
   }
   
   .uxp-select-dropdown-container.dynamic-select {
-    width: 150px !important;
+    // width: 150px !important;
   }
   .mode-change-box{
     .uxp-select-dropdown-container.dynamic-select {
@@ -4539,6 +4016,66 @@
     width: 100%;
     height: 100%;
 
+
+    .nearby-locations{
+      display: inline-block;
+      width: 100%;
+     
+
+        h4{
+          font-size: 17px;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          display: inline-block;
+          border-bottom: 1px solid #fff;
+          text-align: left;
+          padding-bottom: 5px;
+          color: #fff;
+        }
+        .nearby-det{
+          display: inline-block;
+          width: 100%;
+          margin-top: 2em;
+          border-bottom: 1px solid #fff;
+          padding-bottom: 10px;
+
+          &:last-child{ 
+            border-bottom: 0px solid #fff;
+          }
+
+            h5{
+                 font-size: 13px;
+                margin: 0;
+                padding: 0 0 7px 0;
+                width: 100%;
+                display: inline-block;
+                text-align: left;
+                color: #fff;
+            }
+            p{
+              color: #fff;
+              padding: 5px 0px;
+              margin: 0;
+              width: 100%;
+              display: inline-block;
+              font-size: 12px;
+            }
+            button{
+                color: #3d6255;
+                border: none;
+                background: #fff;
+                padding: 8px 10px;
+                float: left;
+                border-radius: 10px;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+   
+
     .smart-city-content{
         .poi-clk{
             a{
@@ -4547,90 +4084,7 @@
             }
         }
 
-        .widget-container {
-            background-color: #ffffff;
-            padding: 10px;
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            width: 100%;
-            margin: 10px auto;
-            box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
 
-            .widget-content {
-                display: inline-block;
-                align-items: center;
-                width: 100%;
-
-                .widget-image {
-                    width: 100%;
-                    height: 100%; 
-                    img{
-                        max-height: 100%;
-                        max-width: 100%;
-                        border-radius: 8px;
-                        width: 100%;
-                        height: 100%;
-                    }
-                  } 
-
-                    .widget-description {
-                        font-size: 0.9em;
-                        color: #555;
-                        margin-top: 5px;
-
-                        h3{
-                            font-size: 2em;
-                            text-align: justify;
-                        }
-                        h5{
-                            font-size: 1.4em; 
-                        }
-                        p{
-                            font-size: 1em;
-                            line-height: 1.6em;
-                            text-align: justify;
-                        }
-                    }
-                    
-                    .widget-icon {
-                        font-size: 1.5em;
-                        color: #333;
-                        margin-left: 0;
-                        float: right;
-                        display: flex;
-                        align-items: end;
-
-                        .location-icon {
-                            background-image: url(https://static.iviva.com/images/Udhayimages/map-icon.svg);
-                            width: 30px;
-                            height: 30px;
-                            display: inline-block;
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            margin-right: 0.2em;
-
-                            a{
-                                width: 100%;
-                                height: 100%;
-                                display: inline-block;
-                            }
-                        }
-                        .more-icon{
-                            width: 30px;
-                            height: 33px;
-                            display: inline-block;
-                            background-position: center center;
-                            background-repeat: no-repeat;
-                            background-size: contain;
-                            font-size: 1.5em;
-                            cursor: pointer;
-                        }
-                    }  
-              } 
-
-          } 
 
         .poi-sec-short{
             display: inline-block;
@@ -4647,6 +4101,343 @@
 
    
 }
+
+
+.modal-container{
+    .modal-backdrop { 
+      background-color: rgb(28 16 16 / 67%); 
+  }
+}
+
+.modal-container.poi-popup .modal-panel { 
+  min-width: 30%;
+  max-width: 40%; 
+  min-height: 40%;
+  max-height: 50%; 
+  // background-color:#EEEDEB;
+  // background-color: #E7F0DC;
+  background-color: #f7ffee;
+
+  // .modal-header{
+  //   .modal-title{
+      
+  //   }
+  //   .modal-close{
+  //       .close-btn{
+
+  //       }
+  //   }
+  // }
+
+  .widget-container {
+    // background-color: #ffffff;
+    // padding: 10px;
+    // border-radius: 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    // margin: 10px auto;
+    // box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+
+    position: static!important;
+
+    .widget-content {
+        display: inline-block;
+        align-items: center;
+        width: 100%;
+
+        .widget-image {
+          width: 40%;
+          height: 200px;
+          display: inline-block;
+          vertical-align: top;
+
+            img{
+                max-height: 100%;
+                max-width: 100%;
+                border-radius: 8px;
+                width: 100%;
+                height: 100%;
+            }
+          } 
+
+            .widget-description {
+              font-size: 0.9em;
+              color: #555;
+              margin-top: 5px;
+              display: inline-block;
+              width: 52%;
+              margin-left: 4%;
+              vertical-align: top;
+
+                h3{
+                  font-size: 2em;
+                  text-align: justify;
+                  margin: 0;
+                  line-height: 1.4em;
+                }
+                h5{
+                  font-size: 1.4em;
+                  margin: 10px 0;
+                }
+                p{
+                    font-size: 1em;
+                    line-height: 1.6em;
+                    text-align: justify;
+                }
+            }
+            
+            .widget-icon {
+                font-size: 1.5em;
+                color: #333;
+                margin-left: 0;
+                float: right;
+                display: flex;
+                align-items: end;
+
+                .location-icon {
+                    background-image: url(https://static.iviva.com/images/Udhayimages/g-map.png);
+                    width: 30px;
+                    height: 30px;
+                    display: inline-block;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-right: 0.2em;
+
+                    a{
+                        width: 100%;
+                        height: 100%;
+                        display: inline-block;
+                    }
+                }
+                .more-icon{
+                  width: 32px;
+                  height: 26px;
+                  display: inline-block;
+                  background-position: center bottom;
+                  background-repeat: no-repeat;
+                  background-size: 100% auto;
+                  font-size: 1.4em;
+                  cursor: pointer;
+                  margin-left: 0.3em; 
+                  background-image: url(https://static.iviva.com/images/Udhayimages/arrow-angle.png);
+                  position: relative;
+
+                  &.expanded{
+                    top: 2px;
+                  }
+                  &.collapsed{
+                    transform: rotate(180deg);
+                    top: -2px;
+                  }
+                }
+            }  
+      } 
+
+  } 
+
+}
+
+
+
+
+
+
+
+
+
+///////////////  Gear section ///////////////
+ 
+.gear_section{
+    display: inline-block;
+    width: 100%;
+
+    .gear-icon{
+      display: inline-block;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+      background-image: url(https://static.iviva.com/images/Udhayimages/gear.png);
+      position: relative;
+      background-color: transparent;
+      padding: 0;
+      margin: 0;
+    } 
+
+    
+  .dropdown-btn {
+    display: inline-block;
+    text-align: center;
+    width: 60%;
+}
+
+}
+
+.gear-dropdown{
+  // display: inline-block;
+  // width: 65px;
+  // right: 260px!important;
+  // top: 138px!important;
+
+  display: inline-block;
+  width: 40px;
+  // right: 260px !important;
+  // top: 138px !important;
+
+  &.dropdown-btn-content {
+    position: absolute;
+     width: auto;  
+     height: auto;  
+     border-radius: 0; 
+     background-color: transparent; 
+     padding: 0;
+     filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)); 
+     -webkit-filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.3)); 
+     z-index: 1000; 
+}
+
+
+  ul{
+    margin: 0;
+    padding: 0;
+    li{
+      // list-style: none;
+      // width: 100%;
+      // height: 100%; 
+      // margin: 10px 0;
+      // padding: 0;
+
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      margin: 10px 0;
+      padding: 5px 5px;
+      background: #fff;
+      border-radius: 10px;
+
+      a{
+          display: inline-block;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: contain;
+          cursor: pointer;
+          width: 25px;
+          height: 25px;
+          text-align: center;
+          background-color: transparent;
+          margin: 0;
+          padding: 0;
+          border-radius: 0;
+
+        &.btn.showcase {
+            margin: 0;
+        }
+
+        &:hover{
+            background-color: transparent;
+            color: #fff;
+        }
+      }
+
+      &.sg-icon{
+        a{
+            background-image: url(https://static.iviva.com/images/Udhayimages/density.png);
+        }
+      }
+      &.radius-icon{
+        a{
+            background-image: url(https://static.iviva.com/images/Udhayimages/radius.png);
+        }
+      }
+      &.refresh-icon{
+        a{
+            background-image: url(https://static.iviva.com/images/Udhayimages/refresh.png);
+        }
+      }
+    }
+  }
+}
+
+.modal-container.sg-popup{
+  
+  .modal-panel{ 
+    min-width: 40%;
+    max-width: 50%; 
+    min-height: 35%;
+    max-height: 50%;
+    
+  background-color: #f7ffee; 
+  }
+}
+
+
+
+.modal-container.radius-popup .modal-panel { 
+    min-width: 60%;
+    max-width: 70%; 
+    min-height: 35%;
+    max-height: 50%;    
+    
+  background-color: #f7ffee;
+
+  .radius-box { 
+    display: inline-block;
+    align-items: center;
+    width: 100%;   
+
+    .showcase-input{
+      display: flex;
+      width: 100% !important; 
+
+      .uxp-form-select {
+        min-width: 27%;
+        margin-right: 2%;
+
+        .uxp-select-placeholder{
+            background: transparent;
+            border-bottom: 1px solid #2b8162;
+            border-radius: 0;
+            box-shadow: none;
+        }
+      }
+      .uxp-search-box-container{
+        width: 24%;
+          .search-box-container{
+            background: transparent;
+            border-bottom: 1px solid #2b8162; 
+            border-radius: 0;
+            box-shadow: none;
+            .uxp-search-box{
+              .uxp-form-input{
+                min-width: 100%;
+              }
+            }
+          }
+      }
+      .uxp-button{
+          width: 16%;
+          background: #448f74;
+          border-radius: 0;
+          text-align: center;
+          color: #fff;
+          display: inline-block;
+          font-size: 14px;
+      }
+
+    }
+  } 
+
+}
+
+
+
+
+
+
 
 
 @media screen and (max-height: 1024px) {
@@ -4669,3 +4460,111 @@
 
 }
  
+
+//////////////*****************//////////////////
+
+
+
+
+
+.modal-container.json-uploader{
+  
+  .modal-panel{ 
+    min-width: 50%;
+    max-width: 60%; 
+    min-height: 55%;
+    max-height: 70%; 
+
+    background-color: #f7ffee; 
+
+    .dropdown-toggle{
+      background-color: #005842;
+      color: #fff;
+    }
+
+    .dropdown-menu{
+
+      display: none;
+
+      &.show{
+
+        background: rgb(0 88 66);
+        width: 50%;
+        border-radius: 0 0px 10px 10px;
+        display: block;
+
+        .dropdown-item{
+          padding: 6px 10px 6px 10px;
+          color: #ffffff;
+          display: inline-block;
+          width: 100%;
+          border-bottom: 1px solid #a5a5a5;
+          border-radius: 0;
+          text-decoration: none;
+          font-size: 12px;
+
+          &:last-child{
+            border-bottom: 0px solid #808080;
+          }
+        }
+
+      }
+    }
+
+    .json-uploader-widget{
+        h2{
+          font-size: 1.2em;
+        }
+    }
+  }
+}
+
+
+
+// .json-uploader {
+//   position: center;
+//   top: 80px;
+//   right: 20px;
+//   background-color: #b8cbb0;
+//   padding: 20px;
+//   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+//   border-radius: 10px;
+//   width: 500px;
+//   height: 500px;
+//   z-index: 1000;
+// }
+
+// .json-uploader h2 {
+//   color: #3c763d;
+// }
+
+// .json-uploader .file-input {
+//   display: none;
+// }
+
+// .json-uploader .upload-button {
+//   background-color: #3c763d;
+//   border-color: #3c763d;
+// }
+
+// .json-uploader .progress-bar {
+//   margin-top: 10px;
+// }
+
+// .json-uploader .data-preview {
+//   margin-top: 20px;
+// }
+
+// .dropdown-menu {
+//   background-color: #dff0d8;
+//   border-color: #3c763d;
+// }
+
+// .dropdown-item {
+//   color: #3c763d;
+// }
+
+// .dropdown-item:hover {
+//   background-color: #3c763d;
+//   color: #fff;
+// }

@@ -73,8 +73,11 @@ import SgGridDensity from './components/sg_grid_density'
 import Poi from './components/poi'
 import SearchRadius from './components/search-list-radius'
 import POI_Description from './components/poi_description'
+import Gear_Widget from './components/gear_widget'
+import JsonUploader from './components/json-uploader'
 
 
+ 
 
 
 // import SmartTestTable from './components/test-table'
@@ -896,6 +899,41 @@ registerWidget({
         } 
     }
 });
+
+registerWidget({
+    id: "gear_Widget", 
+    widget: Gear_Widget,
+    configs: {
+        layout: {
+            w: 10,
+            h: 5,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+
+registerWidget({
+    id: "json_Uploader", 
+    widget: JsonUploader,
+    configs: {
+        layout: {
+            w: 10,
+            h: 5,
+            // minH: 3,
+            // minW: 2,
+            //  maxH: 3,
+            //  maxW: 2
+        } 
+    }
+});
+
+ 
+
+
 
 
 // registerWidget({

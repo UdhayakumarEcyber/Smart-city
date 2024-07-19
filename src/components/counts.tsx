@@ -81,7 +81,7 @@ const CountsWidget: React.FunctionComponent<{}> = () => {
       fullValue: 150,
     },
     {
-      fire_type: "Electricity",
+      fire_type: "Electrical Fire",
       value: 65,
       fullValue: 150,
     },

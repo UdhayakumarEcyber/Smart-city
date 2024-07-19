@@ -45,17 +45,7 @@ const TopNavTabs: React.FunctionComponent<INavmode> = (props) => {
     <WidgetWrapper className="smart-city_box">
       <div className="top-nav-tabs">
         <ul id="navList">
-          {Object.values(tabs).map((tab) => (
-            // <li
-            //   key={tab.id}
-            //   onClick={() => handleTabClick(tab.label)}
-            //   className={`nav-link ${tab.className} ${tab.label === activeTab ? 'active' : ''}`}
-            // >
-            //   <a href="javascript:void(0);">
-            //     <span></span>
-            //     <label>{tab.label}</label>
-            //   </a>
-            // </li> 
+          {Object.values(tabs).map((tab) => ( 
 
             <li
               key={tab.id}

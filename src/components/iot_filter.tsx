@@ -167,10 +167,11 @@ const IOT_Filter: React.FunctionComponent<IWidgetProps> = ({selectedAsset, ...pr
         setSelectedOptions(newValue);
          setAssetGroup(newValue.map(option => option.value));
 
-         console.log("Category", [...assetGroup, newValue[0].value] );
+        // console.log("Category", [...assetGroup, newValue] );
         //setAssetName(newValue.map(option => option.value));
         checkArrays();
     };
+    console.log("Categories", assetGroup);
 
     const formatGroupLabel = (data: any) => (
         <div>
