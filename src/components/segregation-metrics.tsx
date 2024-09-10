@@ -47,7 +47,7 @@ const Segregation_MetricsChart: React.FunctionComponent<{}> = () => {
          
 
    <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
-      <ResponsiveContainer width={300} height={250}>
+      <ResponsiveContainer width={300} height={280}>
         <PieChart>
           <Pie
             data={data}

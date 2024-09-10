@@ -105,7 +105,7 @@ const Waste_Generated_Trend: React.FunctionComponent<{}> = () => {
   
     return (   
 
-        <WidgetWrapper className="smart-city_box energy_consumption-box"> 
+        <WidgetWrapper className="smart-city_box energy_consumption-box lft-widget-box"> 
           
             
             <TitleBar title="Waste Generated Trends" icon='https://static.iviva.com/images/Udhayimages/garbage-white.png'>

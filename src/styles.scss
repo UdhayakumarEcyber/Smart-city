@@ -190,8 +190,7 @@
         background: #08ac87 !important;
       }
   
-      .technician_chart {
-      }
+      
     }
   
     &.order_trend-box {
@@ -244,7 +243,8 @@
 
 
       .smart-city-content {
-        height: 250px;
+        // height: 250px;
+        height: 100%;
         overflow: auto;
 
         .uxp-widget-title-bar{
@@ -408,12 +408,11 @@
   
     &.cctv-box {
       .body {
-        height: 250px;
+        min-height: 40em;
         width: 100%;
         display: inline-block;
         background-image: url(https://static.iviva.com/images/Udhayimages/waste-footage.jpg);
-        // background-size: 100% 100%;
-        background-size: auto 100%;
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
       }
@@ -741,11 +740,18 @@
   
         .technician_chart {
           margin-top: 0em;
-          height: 90%;
+          // height: 90%;
+          height: 100%;
   
           .recharts-responsive-container {
             height: 90% !important;
           }
+          .status-expenditure-chart{
+            .recharts-responsive-container {
+              height: 100% !important;
+            }
+          }
+         
           .recharts-wrapper {
             fill: transparent;
             font-size: 0.88em;
@@ -1474,48 +1480,46 @@
         padding: 1em 1em 0em 1em;
         position: relative;
   
-        .logo {
-          // display: inline-block;
-          //  width: 32%;
-          // background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png");
-          // background-position: center center;
-          // background-repeat: no-repeat;
-          // background-size: 100% auto;
-          // margin-top: 0em;
-          // height: 8em;
-  
+        .logo {  
+
           display: inline-block;
-          width: 33%;
-          // background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO.png");
-          background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO_white.png");
+          width: 45%;
+          background-image: url("https://static.iviva.com/images/Udhayimages/MDA_LOGO_white1.png");
           background-position: center center;
           background-repeat: no-repeat;
-          background-size: 95% auto;
+          background-size: contain;
           margin-top: 0em;
           height: 9em;
+        } 
+        .logo_cont{ 
+          width: 55%;
+          height: 100%;
+          display: table;
+
+          h3 {
+            // display: inline-block;
+            // width: 65%;
+            // font-size: 2.1em;
+            // font-weight: bold;
+            // color: #ffffff;
+            // margin-left: 5%;
+            // padding: 0;
+            // margin: 1.4em 0 0 2%;
+            // text-transform: uppercase;
+  
+            display: table-cell;
+            vertical-align: middle;
+            width: 100%;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #ffffff;
+            padding: 0;
+            margin: 0em 0 0 0;
+            text-transform: uppercase;
+          }
+
         }
-        h2 {
-          display: inline-block;
-          width: 65%;
-          font-size: 2.5em;
-          font-weight: bold;
-          color: #ffffff;
-          margin-left: 5%;
-          padding: 0;
-          margin: 1.3em 0 0 0%;
-          text-transform: uppercase;
-        }
-        h3 {
-          display: inline-block;
-          width: 65%;
-          font-size: 2.1em;
-          font-weight: bold;
-          color: #ffffff;
-          margin-left: 5%;
-          padding: 0;
-          margin: 1.4em 0 0 0%;
-          text-transform: uppercase;
-        }
+       
   
         &.iviva-header-content {
           .logo {
@@ -1723,6 +1727,8 @@
   }
   
   .uxp-select-dropdown-container {
+    display: table-cell!important; 
+    overflow: visible;
     .uxp-select-dropdown {
       .uxp-select-option {
         padding: 12px 10px 12px 10px;
@@ -3271,12 +3277,25 @@
             .uxp-form-select {
               display: inline-block;
               width: 100%;
+              .dynamic-select{
+
+                .selected{
+                  span{
+                    color: #fff;
+                  }
+                  .sel-opt{
+                    .text{
+                      color: #fff;
+                    }
+                  }
+                }
+              }
             }
 
             .css-13cymwt-control {
               background: transparent;
               border: none;
-              color: #52c9a9;
+              color: #ffffff;
               outline: none;
               font-size: 10px;
               margin-top: 5px;
@@ -3290,7 +3309,7 @@
 
                   .css-wsp0cs-MultiValueGeneric {
                       font-size: 10px;
-                      color: #52c9a9;
+                      color: #ffffff;
                   } 
 
                   .css-12a83d4-MultiValueRemove {
@@ -3308,7 +3327,7 @@
               }
 
               .css-1jqq78o-placeholder{
-                color: #52c9a9;
+                color: #ffffff;
               }
 
               .css-1u9des2-indicatorSeparator{
@@ -3334,7 +3353,7 @@
             // background-color: rgb(98 146 132);
             border:none;
             background: transparent;
-            color: #009b79;
+            color: #ffffff;
             outline: none;
           }
 
@@ -3349,7 +3368,8 @@
 
           /* Change the placeholder text color to green */
           .custom-select__placeholder {
-            color: #52c9a9;
+            color: #ffffff;
+            font-size: 10px;
           }
 
           /* Hide the indicator separator */
@@ -3881,23 +3901,42 @@
     }
   
     ul.search-list {
-      padding: 0;
-      margin: 1.5em 0 0 1em;
-      color: #fff;
-      height: 5em;
-      overflow: auto;
-      text-align: left;
-      width: 90%;
+      // padding: 0;
+      // margin: 1.5em 0 0 1em;
+      // color: #fff;
+      // height: 5em;
+      // overflow: auto;
+      // text-align: left;
+      // width: 90%;
+
+        margin: 0 0 0 2px;
+        padding: 0.2em 0 0 0em;
+        color: #fff;
+        height: 5em;
+        overflow: auto;
+        text-align: left;
+        width: 99%;
+        background: transparent;
   
       li {
-        list-style: none;
-        margin: 0 0 3px 0;
-        padding: 6px 5px;
-        width: 100%;
-        cursor: pointer;
+        // list-style: none;
+        // margin: 0 0 3px 0;
+        // padding: 6px 5px;
+        // width: 100%;
+        // cursor: pointer;
+          border-bottom: 1px solid #1d5849;
+          list-style: none;
+          margin: 0 0 0px 0;
+          padding: 7px 10px;
+          width: 100%;
+          cursor: pointer;
+          background: #197760c9;
+          &:last-child{
+            border-bottom: 0px solid #1d5849;
+          }
   
         &:hover {
-          background: rgba(17, 8, 8, 0.708);
+          background: #189486;
         }
       }
     }
@@ -4438,7 +4477,21 @@
 
 
 
+@media screen and (max-height: 1080px) { 
 
+    .smart-city_box.order_summary-box {
+      .smart-city-content {
+        &.smart-city-work-order-content{
+          height: 230px!important; 
+        }
+    }
+  }
+
+  .timer-widget .timer-slider { 
+      top: 0em;
+  }
+
+}
 
 @media screen and (max-height: 1024px) {
 
@@ -4477,31 +4530,73 @@
 
     background-color: #f7ffee; 
 
-    .dropdown-toggle{
-      background-color: #005842;
-      color: #fff;
-    }
 
+    .json-uploader-widget{
+
+      .dropdown{
+        display: inline-block;
+        width: 30%;
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          width: 20px;
+          height: 20px;
+          background-color: transparent;
+          transform: translateY(-50%);
+          background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMy45MzkiIGhlaWdodD0iOC45MDEiIHZpZXdCb3g9IjAgMCAxMy45MzkgOC45MDEiPjxkZWZzPjxzdHlsZT4uYXtmaWxsOm5vbmU7c3Ryb2tlOiM0MjQyNDI7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLWxpbmVqb2luOnJvdW5kO3N0cm9rZS13aWR0aDozcHg7b3BhY2l0eTowLjYyOTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImEiIGQ9Ik0tMTQ0My43Nyw3NDcuNzQybDQuODM2LDUuMjgyLDQuODY0LTUuMjgyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDQ1Ljg4OSAtNzQ1LjYyMykiLz48L3N2Zz4=");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 50%;
+      }
+        .dropdown-toggle{
+          background-color: transparent;
+          border-radius: 0;
+          box-shadow: none;
+          width: 100%;
+          color: #424242;
+          border-bottom: 1px solid #424242;
+          text-align: left;
+          padding-left: 7px;
+        }
+      }
     .dropdown-menu{
 
       display: none;
 
       &.show{
 
-        background: rgb(0 88 66);
-        width: 50%;
-        border-radius: 0 0px 10px 10px;
+        // background: rgb(0 88 66);
+        // width: 50%;
+        // border-radius: 0 0px 10px 10px;
+        // display: block;
+
+        background: #b0b8b7;
+        width: 100%;
+        border-radius: 0;
         display: block;
 
         .dropdown-item{
-          padding: 6px 10px 6px 10px;
-          color: #ffffff;
+          // padding: 6px 10px 6px 10px;
+          // color: #ffffff;
+          // display: inline-block;
+          // width: 100%;
+          // border-bottom: 1px solid #a5a5a5;
+          // border-radius: 0;
+          // text-decoration: none;
+          // font-size: 12px;
+
+          padding: 7px 10px 7px 10px;
+          color: #424242;
           display: inline-block;
           width: 100%;
-          border-bottom: 1px solid #a5a5a5;
+          border-bottom: 1px solid #424242;
           border-radius: 0;
           text-decoration: none;
           font-size: 12px;
+
 
           &:last-child{
             border-bottom: 0px solid #808080;
@@ -4511,10 +4606,22 @@
       }
     }
 
-    .json-uploader-widget{
         h2{
           font-size: 1.2em;
         }
+        .upload-button{
+          background-color: #359677;
+          color: #ffffff;
+        }
+      .alert-danger  {
+
+        &.show{
+            color: #000;
+            margin-top: 5px;
+          
+        }
+      }
+
     }
   }
 }

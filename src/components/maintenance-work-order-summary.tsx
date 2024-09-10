@@ -111,7 +111,7 @@ const Maintenance_Work_Order_Summary: React.FunctionComponent<{}> = () => {
           <TitleBar title="Maintenance Work Order Summary" icon='https://static.iviva.com/images/Udhayimages/agenda.png'></TitleBar>
   
           
-          <div className="smart-city-content"  style={{height:'350px'}}>
+          <div className="smart-city-content" >
 
                 <div className="chart-top">
                 

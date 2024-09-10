@@ -44,7 +44,7 @@ const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {
     ilmAlerts: {
       "AC Voltage": 0,
       "Load Fail": 0,
-      "Lux Sensor Blocked": 0,
+      "Sensor Blocked": 0,
       "Main Fail": 0,
       "Partial Failure": 0,
       "Power Factor": 0,
@@ -78,7 +78,7 @@ const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {
   const pieChartData = [
     { id: "AC Voltage", label: "AC Voltage", value: Number(health.ilmAlerts["AC Voltage"]) || 45 },
     { id: "Load Fail", label: "Load Fail", value: Number(health.ilmAlerts["Load Fail"]) || 58 },
-    { id: "Lux Sensor Blocked", label: "Lux Sensor Blocked", value: Number(health.ilmAlerts["Lux Sensor Blocked"]) || 42 },
+    { id: "Sensor Blocked", label: "Sensor Blocked", value: Number(health.ilmAlerts["Sensor Blocked"]) || 42 },
     { id: "Main Fail", label: "Main Fail", value: Number(health.ilmAlerts["Main Fail"]) || 54 },
     { id: "Partial Failure", label: "Partial Failure", value: Number(health.ilmAlerts["Partial Failure"]) || 57 },
     { id: "Power Factor", label: "Power Factor", value: Number(health.ilmAlerts["Power Factor"]) || 36 },
@@ -135,7 +135,7 @@ const VehicleSummaryWidget: React.FunctionComponent<IWidgetProps> = (props) => {
       />
       <div className="smart-city-content" style={{ width: "100%", height: "100%" }}>
          
-          <div className="technician_chart" style={{ width: "100%", height: "400px" }}>
+          <div className="technician_chart" style={{ width: "100%", height: "95%" }}>
             <ResponsivePie
               valueFormat=","
               theme={chartTheme}

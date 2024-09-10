@@ -173,25 +173,25 @@ const Gear_Widget: React.FunctionComponent<IgearDetails> = (props:any) => {
                                 {/* <li className="sg-icon"><a title="SG Controll" onClick={() => setshowSGModal(true)}></a></li> */}
 
                                 <li className="sg-icon">  
-                                    <Tooltip content={() => <span className="tooltip-cont">SG Control</span>} position="left"> 
+                                    <Tooltip content={() => <span className="tooltip-cont">Density Control</span>} position="left"> 
                                         <a className="btn showcase" onClick={() => setshowSGModal(true)}></a> 
                                     </Tooltip>
                                 </li>
 
                                 <li className="radius-icon"> 
-                                    <Tooltip content={() => <span className="tooltip-cont">Radius Control</span>} position="left"> 
+                                    <Tooltip content={() => <span className="tooltip-cont">POI Radius</span>} position="left"> 
                                         <a className="btn showcase" onClick={() => setshowRadiusModal(true)}></a> 
                                     </Tooltip>
                                 </li>
-
+{/* 
                                 <li className="refresh-icon">  
                                     <Tooltip content={() => <span className="tooltip-cont">Json</span>} position="left"> 
                                         <a className="btn showcase" onClick={handleRefresh}></a> 
                                     </Tooltip>
-                                </li>
+                                </li> */}
 
                                 <li className="refresh-icon">  
-                                    <Tooltip content={() => <span className="tooltip-cont">Refresh</span>} position="left"> 
+                                    <Tooltip content={() => <span className="tooltip-cont">Asset Refresh</span>} position="left"> 
                                         <a className="btn showcase" onClick={handleRefresh}></a> 
                                     </Tooltip>
                                 </li>

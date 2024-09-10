@@ -181,7 +181,7 @@ const AlertWorkOrderSummary: React.FunctionComponent<{}> = () => {
       return ( 
   
          
-         <WidgetWrapper className="smart-city_box order_summary-box"> 
+         <WidgetWrapper className="smart-city_box order_summary-box lft-widget-box"> 
   
           <TitleBar title="Alert Work Order Summary" icon='https://static.iviva.com/images/Udhayimages/warning.png'></TitleBar>
   

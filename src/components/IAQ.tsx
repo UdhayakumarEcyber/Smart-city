@@ -129,7 +129,7 @@ const SemiCircleProgressBar1: React.FC<SemiCircleProgressBarProps> = ({ percenta
      
     return ( 
 
-         <WidgetWrapper className="smart-city_box iaq-box">  
+         <WidgetWrapper className="smart-city_box iaq-box lft-widget-box">  
 
             <TitleBar title="AQI" icon='https://static.iviva.com/images/Udhayimages/wind-sign.png'></TitleBar> 
 

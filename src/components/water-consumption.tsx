@@ -151,7 +151,7 @@ const Water_ConsumptionWidget: React.FunctionComponent<{}> = () => {
       
         return ( 
     
-             <WidgetWrapper className="smart-city_box water_consumption-box">  
+             <WidgetWrapper className="smart-city_box water_consumption-box lft-widget-box">  
     
                 <TitleBar title="Water Consumption" icon='https://static.iviva.com/images/Udhayimages/waterdrop.png'></TitleBar> 
     

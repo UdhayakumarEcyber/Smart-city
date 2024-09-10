@@ -10,7 +10,7 @@ const Waste_CollectionVehicle: React.FunctionComponent<{}> = () => {
 
     return ( 
 
-         <WidgetWrapper className="smart-city_box waste-collection-vehicle">  
+         <WidgetWrapper className="smart-city_box waste-collection-vehicle lft-widget-box">  
 
             <TitleBar title="Waste Collection vehicle" icon='https://static.iviva.com/images/Udhayimages/garbage-truck.png'></TitleBar> 
 

@@ -30,7 +30,7 @@ const Waste_bin_StatusWidget: React.FunctionComponent<{}> = () => {
 
     return ( 
 
-         <WidgetWrapper className="smart-city_box waste-bin-box">  
+         <WidgetWrapper className="smart-city_box waste-bin-box lft-widget-box">  
 
             <TitleBar title="Waste Bin Status" icon='https://static.iviva.com/images/Udhayimages/waste-bin.png'></TitleBar> 
 

@@ -14,7 +14,8 @@ const TopHeader: React.FunctionComponent<IMapChangeMode> = (props) => {
 
         <div className="header-content">
               <div className='logo'></div>
-                <h3>Madina Smart City</h3>   
+              <div className='logo_cont'><h3>Madina Smart City</h3></div>
+                 
         </div> 
 
     </WidgetWrapper> 

@@ -339,32 +339,8 @@ const AlertTrends: React.FunctionComponent<{}> = () => {
               position="left"
               placeholder=""
             />
-
-            {/* <Select
-              selected={selected}
-              options={[
-                { label: "All Alert", value: "op-1" },
-                { label: "All Alert 1", value: "op-2" },
-                { label: "All Alert 2", value: "op-3" },
-              ]}
-              onChange={(value) => {
-                setSelected(value);
-              }}
-              placeholder=" All Alert"
-            /> */}
-
-            {/* <DatePicker
-              title="Date"
-              date={date}
-              onChange={(date) => setDate(date)}
-            />
-
-            <DatePicker
-              title="Date"
-              date={date1}
-              onChange={(date1) => setDate1(date1)}
-            /> */}
-            <ToggleFilter
+ <div style={{ position:"absolute", right:"0"}}>
+            <ToggleFilter  
               options={[
                 { label: "7D", value: "day" },
                 { label: "1M", value: "week" },
@@ -373,6 +349,7 @@ const AlertTrends: React.FunctionComponent<{}> = () => {
               value={toggleFilterValue}
               onChange={handleFilterChange}
             />
+            </div>
           </FormField>
         </div>
 
@@ -382,16 +359,11 @@ const AlertTrends: React.FunctionComponent<{}> = () => {
               display: "flex",
               justifyContent: "flex-start",
               width: "100%",
-              height: "250px",
+              height: "300px",
             }}
           >
             <ResponsiveContainer width="100%" height="100%">
-              {/* <RadialBarChart cx="50%" cy="50%" innerRadius="10%" outerRadius="100%" barSize={10} data={data}> */}
-              {/* <RadialBar
-                            label={{ position: 'insideStart', fill: '#fff' }}
-                            background 
-                            dataKey="uv"
-                          /> */}
+            
               <LineChart data={finalChartData}>
                 <CartesianGrid stroke="#1a6f60cf" strokeDasharray="1 1" />
                 <XAxis dataKey="name" tick={{ fill: "#ffffff" }} />
