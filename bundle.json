@@ -1,408 +1,402 @@
 {
-    "id": "e6a7f72a-85de-4259-ed4e-7412d22635d9",
-    "author": "eutech",
-    "widgets": [
+	"id": "e6a7f72a-85de-4259-ed4e-7412d22635d9",
+	"author": "eutech",
+	"widgets": [
+		{
+			"id": "topNavTabs",
+			"name": "Top Nav Tabs",
+			"description": " ",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "weatherIcons",
+			"name": "Weather Icons",
+			"description": " ",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "sunController",
+			"name": "Sun Controller",
+			"description": " ",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "sgGridDensity",
+			"name": "Sg Grid Density",
+			"description": " ",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "cesiumOSMMap",
+			"name": "Cesium OSM Map",
+			"description": "Order Trend widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "maintenance_WorkOrder_Trend",
+			"name": "Maintenance Work Order Trend",
+			"description": "Order Trend widget",
+			"icon": "",
+			"tags": []
+		},
 
-
-        
-        {
-            "id": "topNavTabs",
-            "name": "Top Nav Tabs",
-            "description": " ",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "weatherIcons",
-            "name": "Weather Icons",
-            "description": " ",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "sunController",
-            "name": "Sun Controller",
-            "description": " ",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "sgGridDensity",
-            "name": "Sg Grid Density",
-            "description": " ",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "cesiumOSMMap",
-            "name": "Cesium OSM Map",
-            "description": "Order Trend widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "maintenance_WorkOrder_Trend",
-            "name": "Maintenance Work Order Trend",
-            "description": "Order Trend widget",
-            "icon": "",
-            "tags":[]
-        },
-
-        {
-            "id": "Order_Summary",
-            "name": "Order Summary",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "segregation_Metrics_Chart",
-            "name": "Segregation Metrics Chart",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "cctvWidget",
-            "name": "CCTV Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "wasteBinStatus",
-            "name": "Waste Bin Status",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "waste_Collection_Vehicle",
-            "name": "Waste Collection Vehicle",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "waste_segregation_Metrics",
-            "name": "Waste Segregation Metrics",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "vehicleSummaryWidget",
-            "name": "Vehicle Summary Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "energyConsumption",
-            "name": "Energy Consumption Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "streetLightStatusWidget",
-            "name": "Street Ligh Status Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },   
-        {
-            "id": "waterSummary",
-            "name": "Water Summary Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "water_consumption",
-            "name": "Water Consumption Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "mapComponent",
-            "name": "Map Component",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "streetLightWorkOrder",
-            "name": "Street Light Work Order",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "waste-Generated-Trend",
-            "name": "Waste Generated Trend",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "maintenance-Work-Order-Summary",
-            "name": "Maintenance Work Order Summary",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "water_Leakage_Work_Order",
-            "name": "Water Leakage Work Order",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "alert-Work-Order-Summary",
-            "name": "Alert WOrk Order Summary",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "counts_Widget",
-            "name": "Counts",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "alertTrends",
-            "name": "Alert Trends",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "emergencyWorkOrderSummary",
-            "name": "Emergency Work Order Summary",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "traffic_Control",
-            "name": "Traffic Control",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "iaq_Summary",
-            "name": "IAQ Summary",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "iaq_Widget",
-            "name": "IAQ",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "comapre-IAQ",
-            "name": "Comapre IAQ",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "cctvoverviewWidget",
-            "name": "CCTV Overview Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "heightMap",
-            "name": "Height Map",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "districtToggle",
-            "name": "District Toggle",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "top_Header",
-            "name": "Top Header",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "top_IvivaHeader",
-            "name": "Top Iviva Header",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "top_Right_Header",
-            "name": "Top Right Header",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "searchBox_Container",
-            "name": "SearchBox Container",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "powerBy_Widget",
-            "name": "PowerBy Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "partnership_Widget",
-            "name": "Partnership Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "cityNames_Widget",
-            "name": "CityNames Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "modeChange_Widget",
-            "name": "Mode Change Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "building_Summary",
-            "name": "Building Summary Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "floor_Layout",
-            "name": "Building Floor Layout",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "building_SmartBim",
-            "name": "Building Smart Bim",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "building_Occupancy",
-            "name": "Building Occupancy",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "incident_Management",
-            "name": "Incident Management",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "iOT_Filter",
-            "name": "IOT Filter",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "madinah_Facts",
-            "name": "Madinah Facts",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }, 
-        {
-            "id": "pole_Details",
-            "name": "Pole Details",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "refresh_Btn",
-            "name": "Refresh Btn",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "poi",
-            "name": "Poi",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "poi_Description",
-            "name": "POI Description",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "searchRadius",
-            "name": "Search Radius",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "gear_Widget",
-            "name": "Gear Widget",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        },
-        {
-            "id": "json_Uploader",
-            "name": "Json Uploader",
-            "description": "A sample widget",
-            "icon": "",
-            "tags":[]
-        }
-        
-
-        
-        
-    ],
-    "sidebarLinks": [
-        
-    ],
-    "uis": [
-       
-    ],
-    "menuItems": [
-        
-    ]
+		{
+			"id": "Order_Summary",
+			"name": "Order Summary",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "segregation_Metrics_Chart",
+			"name": "Segregation Metrics Chart",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "cctvWidget",
+			"name": "CCTV Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "wasteBinStatus",
+			"name": "Waste Bin Status",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "waste_Collection_Vehicle",
+			"name": "Waste Collection Vehicle",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "waste_segregation_Metrics",
+			"name": "Waste Segregation Metrics",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "vehicleSummaryWidget",
+			"name": "Vehicle Summary Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "energyConsumption",
+			"name": "Energy Consumption Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "streetLightStatusWidget",
+			"name": "Street Ligh Status Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "waterSummary",
+			"name": "Water Summary Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "water_consumption",
+			"name": "Water Consumption Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "mapComponent",
+			"name": "Map Component",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "streetLightWorkOrder",
+			"name": "Street Light Work Order",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "waste-Generated-Trend",
+			"name": "Waste Generated Trend",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "maintenance-Work-Order-Summary",
+			"name": "Maintenance Work Order Summary",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "water_Leakage_Work_Order",
+			"name": "Water Leakage Work Order",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "alert-Work-Order-Summary",
+			"name": "Alert WOrk Order Summary",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "counts_Widget",
+			"name": "Counts",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "alertTrends",
+			"name": "Alert Trends",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "emergencyWorkOrderSummary",
+			"name": "Emergency Work Order Summary",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "traffic_Control",
+			"name": "Traffic Control",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "iaq_Summary",
+			"name": "IAQ Summary",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "iaq_Widget",
+			"name": "IAQ",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "comapre-IAQ",
+			"name": "Comapre IAQ",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "cctvoverviewWidget",
+			"name": "CCTV Overview Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "heightMap",
+			"name": "Height Map",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "districtToggle",
+			"name": "District Toggle",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "top_Header",
+			"name": "Top Header",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "top_IvivaHeader",
+			"name": "Top Iviva Header",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "top_Right_Header",
+			"name": "Top Right Header",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "searchBox_Container",
+			"name": "SearchBox Container",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "powerBy_Widget",
+			"name": "PowerBy Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "partnership_Widget",
+			"name": "Partnership Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "cityNames_Widget",
+			"name": "CityNames Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "modeChange_Widget",
+			"name": "Mode Change Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "building_Summary",
+			"name": "Building Summary Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "floor_Layout",
+			"name": "Building Floor Layout",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "building_SmartBim",
+			"name": "Building Smart Bim",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "building_Occupancy",
+			"name": "Building Occupancy",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "incident_Management",
+			"name": "Incident Management",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "iOT_Filter",
+			"name": "IOT Filter",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "madinah_Facts",
+			"name": "Madinah Facts",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "pole_Details",
+			"name": "Pole Details",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "refresh_Btn",
+			"name": "Refresh Btn",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "SmartBim_Btn",
+			"name": "SmartBim Btn",
+			"description": "SmartBim redirect Icon",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "poi",
+			"name": "Poi",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "poi_Description",
+			"name": "POI Description",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "searchRadius",
+			"name": "Search Radius",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "gear_Widget",
+			"name": "Gear Widget",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		},
+		{
+			"id": "json_Uploader",
+			"name": "Json Uploader",
+			"description": "A sample widget",
+			"icon": "",
+			"tags": []
+		}
+	],
+	"sidebarLinks": [],
+	"uis": [],
+	"menuItems": []
 }
