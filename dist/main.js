@@ -58228,7 +58228,7 @@ const BuildingSmartBim = () => {
                             react_1.default.createElement("div", { className: "secondary-text" }, "Singapore")),
                         react_1.default.createElement("div", { className: "centering-container" },
                             react_1.default.createElement("div", { className: "blue-button enabled" },
-                                react_1.default.createElement("a", { onClick: () => window.open(`${bimSiteURL}/Apps/SmartBIM/home/url?view=4`, "_blank", "width=1000,height=500") }, "VIEW")))),
+                                react_1.default.createElement("a", { onClick: () => window.open(`${bimSiteURL}/Apps/SmartBIM/home/url?view=IISC`, "_blank", "width=1000,height=500") }, "VIEW")))),
                     react_1.default.createElement("div", { className: "menu-item image" },
                         react_1.default.createElement("div", { className: "item-header" },
                             react_1.default.createElement("div", { className: "blue-plate" }),
@@ -66758,21 +66758,21 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 //       <div className="smart-city-content">
 //            <div className="status-content">
 //             <div className="status Attention">
-//               <h3> 
+//               <h3>
 //                   253
 //                 <span></span>
 //               </h3>
 //               <p>High</p>
 //             </div>
 //             <div className="status Pending">
-//               <h3> 
+//               <h3>
 //                   124
 //                 <span></span>
 //               </h3>
 //               <p>Medium</p>
 //             </div>
 //             <div className="status Resloved">
-//               <h3> 
+//               <h3>
 //                   89
 //                 <span></span>
 //               </h3>
@@ -66913,7 +66913,7 @@ const components_1 = __webpack_require__(/*! uxp/components */ "uxp/components")
 const recharts_1 = __webpack_require__(/*! recharts */ "recharts");
 const recharts_2 = __webpack_require__(/*! recharts */ "recharts");
 const Street_Light__Status_Widget = (props) => {
-    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l, _m, _o, _p, _q, _r, _s, _t, _u, _v, _w, _x, _y, _z, _0, _1, _2, _3, _4, _5, _6, _7, _8, _9, _10, _11, _12, _13, _14, _15, _16, _17;
     const [health, setHealth] = (0, react_1.useState)(null);
     const [lampdata, setLampData] = (0, react_1.useState)(null);
     const [loading, setLoading] = (0, react_1.useState)(true); // Initialize loading state
@@ -67117,23 +67117,22 @@ const Street_Light__Status_Widget = (props) => {
             loading ? (react_1.default.createElement("div", null, "Loading...")) : (react_1.default.createElement("div", { className: "status-content" },
                 react_1.default.createElement("div", { className: "status Attention" },
                     react_1.default.createElement("h3", null,
-                        ((_a = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _a === void 0 ? void 0 : _a["Main Fail"]) +
-                            ((_b = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _b === void 0 ? void 0 : _b["Lamp Flickering"]),
-                        " ",
+                        ((_b = (_a = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _a === void 0 ? void 0 : _a["Main Fail"]) !== null && _b !== void 0 ? _b : 0) +
+                            ((_d = (_c = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _c === void 0 ? void 0 : _c["Lamp Flickering"]) !== null && _d !== void 0 ? _d : 0),
                         react_1.default.createElement("span", null)),
                     react_1.default.createElement("p", null, "High")),
                 react_1.default.createElement("div", { className: "status Pending" },
                     react_1.default.createElement("h3", null,
-                        ((_c = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _c === void 0 ? void 0 : _c["Load Fail"]) +
-                            ((_d = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _d === void 0 ? void 0 : _d["Lux Sensor Blocked"]) +
-                            ((_e = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _e === void 0 ? void 0 : _e["Partial Failure"]),
+                        ((_f = (_e = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _e === void 0 ? void 0 : _e["Load Fail"]) !== null && _f !== void 0 ? _f : 0) +
+                            ((_h = (_g = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _g === void 0 ? void 0 : _g["Lux Sensor Blocked"]) !== null && _h !== void 0 ? _h : 0) +
+                            ((_k = (_j = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _j === void 0 ? void 0 : _j["Partial Failure"]) !== null && _k !== void 0 ? _k : 0),
                         " ",
                         react_1.default.createElement("span", null)),
                     react_1.default.createElement("p", null, "Medium")),
                 react_1.default.createElement("div", { className: "status Resloved" },
                     react_1.default.createElement("h3", null,
-                        ((_f = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _f === void 0 ? void 0 : _f["Power Factor"]) +
-                            ((_g = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _g === void 0 ? void 0 : _g["AC Voltage"]),
+                        ((_m = (_l = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _l === void 0 ? void 0 : _l["Power Factor"]) !== null && _m !== void 0 ? _m : 0) +
+                            ((_p = (_o = health === null || health === void 0 ? void 0 : health.ilmAlerts) === null || _o === void 0 ? void 0 : _o["AC Voltage"]) !== null && _p !== void 0 ? _p : 0),
                         " ",
                         react_1.default.createElement("span", null)),
                     react_1.default.createElement("p", null, "Low")))),
@@ -67142,25 +67141,25 @@ const Street_Light__Status_Widget = (props) => {
                 react_1.default.createElement("div", { className: "progress-bar-container" },
                     react_1.default.createElement(react_1.default.Fragment, null,
                         react_1.default.createElement("div", { className: "progress-bar installedLamps", style: {
-                                width: `${Number(calculatePercentage(Number((_j = (_h = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _h === void 0 ? void 0 : _h.installedLamps) !== null && _j !== void 0 ? _j : 75), Number((_l = (_k = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _k === void 0 ? void 0 : _k.installedLamps) !== null && _l !== void 0 ? _l : 75) +
-                                    Number((_o = (_m = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _m === void 0 ? void 0 : _m.workingLamps) !== null && _o !== void 0 ? _o : 25))) < 10
+                                width: `${Number(calculatePercentage(Number((_r = (_q = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _q === void 0 ? void 0 : _q.installedLamps) !== null && _r !== void 0 ? _r : 75), Number((_t = (_s = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _s === void 0 ? void 0 : _s.installedLamps) !== null && _t !== void 0 ? _t : 75) +
+                                    Number((_v = (_u = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _u === void 0 ? void 0 : _u.workingLamps) !== null && _v !== void 0 ? _v : 25))) < 10
                                     ? 10
-                                    : Math.max(10, Number(calculatePercentage(Number((_q = (_p = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _p === void 0 ? void 0 : _p.installedLamps) !== null && _q !== void 0 ? _q : 75), Number((_s = (_r = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _r === void 0 ? void 0 : _r.installedLamps) !== null && _s !== void 0 ? _s : 75) +
-                                        Number((_u = (_t = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _t === void 0 ? void 0 : _t.workingLamps) !== null && _u !== void 0 ? _u : 25))))}%`,
+                                    : Math.max(10, Number(calculatePercentage(Number((_x = (_w = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _w === void 0 ? void 0 : _w.installedLamps) !== null && _x !== void 0 ? _x : 75), Number((_z = (_y = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _y === void 0 ? void 0 : _y.installedLamps) !== null && _z !== void 0 ? _z : 75) +
+                                        Number((_1 = (_0 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _0 === void 0 ? void 0 : _0.workingLamps) !== null && _1 !== void 0 ? _1 : 25))))}%`,
                             } }),
                         react_1.default.createElement("div", { className: "progress-bar working-lamps", style: {
-                                width: `${Number(calculatePercentage(Number((_w = (_v = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _v === void 0 ? void 0 : _v.workingLamps) !== null && _w !== void 0 ? _w : 25), Number((_y = (_x = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _x === void 0 ? void 0 : _x.installedLamps) !== null && _y !== void 0 ? _y : 75) +
-                                    Number((_0 = (_z = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _z === void 0 ? void 0 : _z.workingLamps) !== null && _0 !== void 0 ? _0 : 25))) < 10
+                                width: `${Number(calculatePercentage(Number((_3 = (_2 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _2 === void 0 ? void 0 : _2.workingLamps) !== null && _3 !== void 0 ? _3 : 25), Number((_5 = (_4 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _4 === void 0 ? void 0 : _4.installedLamps) !== null && _5 !== void 0 ? _5 : 75) +
+                                    Number((_7 = (_6 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _6 === void 0 ? void 0 : _6.workingLamps) !== null && _7 !== void 0 ? _7 : 25))) < 10
                                     ? 10
-                                    : Number(calculatePercentage(Number((_2 = (_1 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _1 === void 0 ? void 0 : _1.workingLamps) !== null && _2 !== void 0 ? _2 : 25), Number((_4 = (_3 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _3 === void 0 ? void 0 : _3.installedLamps) !== null && _4 !== void 0 ? _4 : 75) +
-                                        Number((_6 = (_5 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _5 === void 0 ? void 0 : _5.workingLamps) !== null && _6 !== void 0 ? _6 : 25)))}%`,
+                                    : Number(calculatePercentage(Number((_9 = (_8 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _8 === void 0 ? void 0 : _8.workingLamps) !== null && _9 !== void 0 ? _9 : 25), Number((_11 = (_10 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _10 === void 0 ? void 0 : _10.installedLamps) !== null && _11 !== void 0 ? _11 : 75) +
+                                        Number((_13 = (_12 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _12 === void 0 ? void 0 : _12.workingLamps) !== null && _13 !== void 0 ? _13 : 25)))}%`,
                             } }))),
                 react_1.default.createElement("div", { className: "chart-sec" },
                     react_1.default.createElement("div", { className: "chart-issue" },
-                        react_1.default.createElement("h3", null, (_8 = (_7 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _7 === void 0 ? void 0 : _7.installedLamps) !== null && _8 !== void 0 ? _8 : "N/A"),
+                        react_1.default.createElement("h3", null, (_15 = (_14 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _14 === void 0 ? void 0 : _14.installedLamps) !== null && _15 !== void 0 ? _15 : "N/A"),
                         react_1.default.createElement("p", null, "Installed lamps")),
                     react_1.default.createElement("div", { className: "chart-pending" },
-                        react_1.default.createElement("h3", null, (_10 = (_9 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _9 === void 0 ? void 0 : _9.workingLamps) !== null && _10 !== void 0 ? _10 : "N/A"),
+                        react_1.default.createElement("h3", null, (_17 = (_16 = lampdata === null || lampdata === void 0 ? void 0 : lampdata.ilm) === null || _16 === void 0 ? void 0 : _16.workingLamps) !== null && _17 !== void 0 ? _17 : "N/A"),
                         react_1.default.createElement("p", null, "Working lamps")))),
             react_1.default.createElement("div", { className: "smart-city-content smart-city-status-content", style: { width: "100%" } },
                 react_1.default.createElement(components_1.WidgetWrapper, { className: "smart-city_box energy_consumption-box  expenditure-box" },
@@ -67168,9 +67167,18 @@ const Street_Light__Status_Widget = (props) => {
                     react_1.default.createElement("div", { className: "smart-city-content" },
                         react_1.default.createElement("div", { className: "technician_chart" },
                             react_1.default.createElement("div", { style: { display: "inline-flex", width: "100%" } },
-                                react_1.default.createElement("div", { className: "chart-top", style: { width: '40%', marginTop: "0em", display: "inline-block" } },
+                                react_1.default.createElement("div", { className: "chart-top", style: {
+                                        width: "40%",
+                                        marginTop: "0em",
+                                        display: "inline-block",
+                                    } },
                                     react_1.default.createElement("div", { className: "sub_title_bar" }, "SAR ( x 1000 )")),
-                                react_1.default.createElement("div", { className: "chart-top", style: { width: '60%', marginTop: "0em", display: "inline-block", textAlign: "right" } },
+                                react_1.default.createElement("div", { className: "chart-top", style: {
+                                        width: "60%",
+                                        marginTop: "0em",
+                                        display: "inline-block",
+                                        textAlign: "right",
+                                    } },
                                     react_1.default.createElement(components_1.ToggleFilter, { options: [
                                             { label: "7D", value: "day" },
                                             { label: "1M", value: "week" },
